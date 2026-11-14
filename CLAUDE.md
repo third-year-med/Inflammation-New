@@ -21,4 +21,9 @@ in the platform repository: `third-year-med/Interactive-pathology-platform` → 
   with `tools/module-release.js refresh` — do not edit it by hand.
 - A new build goes through the preview / compatibility check / go-live procedure (`docs/REBUILD.md`) and must keep the
   IDs of continuing topics, sections, questions, cases and images.
+- **Practical rebuild (2026-11-14, builds new-1.4 / new-1.5):** t13 = 12 practical cases (old Cases 12–18 removed; the keloid
+  case is Case 12), 97 departmental pictures (`in-prac2-01…97`, picture-import file), questions p001–p031. Spotter: 138
+  questions, 38 hardest in 🧪 Practice (`inflnew-spotter-questions-4.json`); 🔒 practical bank (129, `aqb_inp_*`, `pic:` refs);
+  OSPE 23 stations (`in-os2-*`). Students do not see the Learn practical topic (patch `prac-clean`). Served at
+  `https://third-year-med.github.io/Inflammation-New/` since GitHub renamed the repository. Standard: platform HANDBOOK §4.4.
 - Test changes on the real page with the platform repo's e2e tests (`IN_CONTENT_KEY` in the environment) before pushing.
