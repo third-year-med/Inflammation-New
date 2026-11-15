@@ -22290,8 +22290,9 @@ function uxrBar() {
     UX_FINALE.topics = (UX_FINALE.topics || []).filter(id => !prac.includes(id));
     const k = UX_ALL_UNITS.indexOf(UX_FINALE); if (k >= 0 && !UX_FINALE.topics.length) UX_ALL_UNITS.splice(k, 1);
   };
+  const inViva = () => typeof Router !== 'undefined' && Router.current === 'viva';   // the 🎓 Viva keeps every topic (its practical questions)
   getTopics = function (includeHidden) {
-    const l = gt0.apply(this, arguments); if (!studentView()) return l;
+    const l = gt0.apply(this, arguments); if (!studentView() || inViva()) return l;
     dropFinale(); return includeHidden ? l : l.filter(t => !PRAC_RE.test(t.title || ''));
   };
   const pracTopic = () => gt0().find(t => PRAC_RE.test(t.title || '')) || null;
