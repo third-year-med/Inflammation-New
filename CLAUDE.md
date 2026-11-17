@@ -26,4 +26,7 @@ in the platform repository: `third-year-med/Interactive-pathology-platform` → 
   questions, 38 hardest in 🧪 Practice (`inflnew-spotter-questions-4.json`); 🔒 practical bank (129, `aqb_inp_*`, `pic:` refs);
   OSPE 23 stations (`in-os2-*`). Students do not see the Learn practical topic (patch `prac-clean`). Served at
   `https://third-year-med.github.io/Inflammation-New/` since GitHub renamed the repository. Standard: platform HANDBOOK §4.4.
+- **Open (2026-11-16, platform rule HANDBOOK §4.4):** every practical picture also into its Learn topic, then ONE picture per finding
+  (repeats out with a `neo-picture-remove` file — 🗑 Remove pictures in Teacher Portal → 💾 Backup). Done for Granulomatous; here it
+  waits for the user's picture files (topic + practical) or a master backup and the content key.
 - Test changes on the real page with the platform repo's e2e tests (`IN_CONTENT_KEY` in the environment) before pushing.
